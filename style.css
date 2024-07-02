@@ -1105,7 +1105,6 @@ nav {
   color: #4070f4; /* Same hover color on focus */
   transform: scale(1.2); /* Same scaling on focus */
 }
-/* Add the new improved Projects Section Styles */
 .projects {
   background-color: #2c3e50;
   color: #ecf0f1;
@@ -1138,7 +1137,6 @@ nav {
   color: #3498db;
 }
 
-/* Change the color of the "text-four" class */
 .text-four {
   color: #ff5733;
 }
