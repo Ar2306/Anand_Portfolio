@@ -11,7 +11,7 @@
 
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
-  width: 10px;
+  display: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -1312,59 +1312,6 @@ nav {
     color: #4070f4;
   }
 }
-
-/* Theme Switcher Styles */
-.theme-switch {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-}
-
-.theme-switch input {
-  display: none;
-}
-
-.theme-switch label {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  background: url("assets/background.png") no-repeat;
-  background-size: 50%;
-  background-position: center;
-  cursor: pointer;
-}
-
-.theme-switch input:checked + label {
-  background-color: #e6e6ed;
-}
-
-.slider {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 34px;
-  transition: background-color 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  border-radius: 50%;
-  transition: transform 0.4s;
-}
-
-input:checked + label .slider:before {
-  transform: translateX(26px);
-}
-
 .side-menu {
   position: fixed;
   top: 0;
@@ -1433,26 +1380,6 @@ input:checked + label .slider:before {
   animation-delay: 0.5s;
 }
 
-/* Cancel Button Styles */
-.cancel-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  color: #fff;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.cancel-btn i {
-  color: #fff;
-  font-size: 24px;
-}
-
-.cancel-btn:hover,
-.cancel-btn:focus {
-  color: #4070f4;
-  transform: scale(1.2);
-}
 /* CSS for animation when showing and hiding the side menu */
 .menu {
   list-style: none;
@@ -1487,7 +1414,7 @@ input:checked + label .slider:before {
 
 .menu-btn {
   cursor: pointer;
-  display: none; /* Initially hidden for larger screens */
+  display: none;
 }
 
 .menu-btn i {
@@ -1718,36 +1645,4 @@ body.no-scroll {
   color: #fff;
   font-weight: bold;
   font-size: 1.1em;
-}
-/* Loader Wrapper */
-.loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-/* Loader Animation */
-.loader {
-  border: 8px solid rgba(255, 255, 255, 0.2);
-  border-top: 8px solid #4070f4; /* Blue accent */
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
